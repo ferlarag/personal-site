@@ -15,7 +15,7 @@ export const ProjectCard = forwardRef<
       ref={ref}
       className={cn(
         className,
-        "bg-zinc-100 relative flex flex-col mb-4 h-[200px] p-4 border-zinc-300 rounded-lg hover:border-purple-500",
+        "bg-zinc-100 relative flex flex-col mb-4 h-[250px] p-6 border-zinc-300 rounded-lg hover:border-purple-500",
       )}
       {...props}
     />
@@ -78,7 +78,13 @@ export const ProjectCardTitle = forwardRef<
   HTMLHeadingElement,
   HTMLAttributes<HTMLHeadingElement>
 >(({ className, ...props }, ref) => {
-  return <h3 ref={ref} {...props} className={cn(className, "font-medium")} />;
+  return (
+    <h3
+      ref={ref}
+      {...props}
+      className={cn(className, "font-medium text-xl mb-2")}
+    />
+  );
 });
 
 export const ProjectCardDescription = forwardRef<
