@@ -8,7 +8,7 @@ const SectionWrapper = forwardRef<
   return (
     <div
       ref={ref}
-      className={cn(className, "border-b border-zinc-200 p-6")}
+      className={cn(className, "border-b border-zinc-200 p-6 last:border-b-0")}
       {...props}
     />
   );

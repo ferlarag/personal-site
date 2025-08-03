@@ -4,10 +4,10 @@ import SectionWrapper from "./ui/SectionWrapper";
 
 const NavBar = () => {
   return (
-    <SectionWrapper className="flex justify-between bg-white/70 backdrop-blur-md sticky top-0">
+    <SectionWrapper className="flex z-20 justify-between bg-white/70 backdrop-blur-md sticky top-0">
       <div>
         <Title>Fernando Lara</Title>
-        <p className="font-mono">Software Engineer</p>
+        <p className="font-mono uppercase">Software Engineer</p>
       </div>
       <div className="flex gap-4">
         <a target="_blank" className="p-2" href="https://www.x.com/ferlarag_">

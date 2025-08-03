@@ -6,7 +6,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <div className="w-full bg-white rounded-2xl overflow-hidden border md:my-10 border-zinc-200 max-w-[900px] mx-auto">
+      <div className="w-full relative bg-white border md:my-10 border-zinc-200 max-w-[900px] mx-auto">
         <NavBar />
         <Outlet />
       </div>
